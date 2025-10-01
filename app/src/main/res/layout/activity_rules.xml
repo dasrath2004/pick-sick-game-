@@ -4,7 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/psimg"
     android:layout_height="match_parent"
     tools:context=".rules">
+
+    <TextView
+        android:id="@+id/rresult"
+        android:layout_width="352dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="144dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="144dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rresult"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
