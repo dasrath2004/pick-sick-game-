@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PickSick">
         <activity
+            android:name=".VikingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameOfThronesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeathNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DragonballActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NarutoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HarryPotterActivity"
+            android:exported="false" />
+        <activity
             android:name=".about"
             android:exported="false" />
         <activity
