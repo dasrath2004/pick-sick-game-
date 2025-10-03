@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PickSick">
         <activity
+            android:name=".vresult"
+            android:exported="false" />
+        <activity
+            android:name=".vQ5"
+            android:exported="false" />
+        <activity
+            android:name=".vQ4"
+            android:exported="false" />
+        <activity
+            android:name=".vQ3"
+            android:exported="false" />
+        <activity
+            android:name=".vQ2"
+            android:exported="false" />
+        <activity
             android:name=".VikingsActivity"
             android:exported="false" />
         <activity

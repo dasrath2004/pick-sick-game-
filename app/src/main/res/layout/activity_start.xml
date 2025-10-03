@@ -5,14 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/psimg"
+    android:background="@drawable/psques"
     tools:context=".start">
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="215dp"
         android:layout_height="289dp"
-        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +23,7 @@
             android:layout_height="wrap_content"
             android:gravity="center|start"
             android:text="Harry Potter"
+            android:textColor="@color/white"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="93dp"
             tools:layout_editor_absoluteY="155dp" />
@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:text="Naruto"
             android:textSize="20sp"
+            android:textColor="@color/white"
             tools:layout_editor_absoluteX="102dp"
             tools:layout_editor_absoluteY="224dp" />
 
@@ -43,6 +44,7 @@
             android:layout_height="wrap_content"
             android:text="Dragonball"
             android:textSize="20sp"
+            android:textColor="@color/white"
             tools:layout_editor_absoluteX="107dp"
             tools:layout_editor_absoluteY="291dp" />
 
@@ -51,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DeathNote"
+            android:textColor="@color/white"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="119dp"
             tools:layout_editor_absoluteY="380dp" />
@@ -59,6 +62,7 @@
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Game_Of_Thrones"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="111dp"
@@ -69,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Vikngs"
+            android:textColor="@color/white"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="111dp"
             tools:layout_editor_absoluteY="443dp" />
