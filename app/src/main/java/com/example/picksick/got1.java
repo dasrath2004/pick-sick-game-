@@ -1,3 +1,4 @@
+
 package com.example.picksick;
 
 import android.app.AlertDialog;
@@ -15,19 +16,19 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class GameOfThronesActivity extends AppCompatActivity {
+public class got1 extends AppCompatActivity {
 
     TextView question;
     RadioGroup rg;
     Button submit;
 
-    int correctAnswerId = R.id.radioButtonB;
+    int correctAnswerId = R.id.radioButtonC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_game_of_thrones);
+        setContentView(R.layout.activity_got1);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -45,7 +46,7 @@ public class GameOfThronesActivity extends AppCompatActivity {
             int selectedId = rg.getCheckedRadioButtonId();
 
             if (selectedId == -1) {
-                new AlertDialog.Builder(GameOfThronesActivity.this)
+                new AlertDialog.Builder(got1.this)
                         .setTitle("Selection Required")
                         .setMessage("Please select an option")
                         .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
@@ -55,7 +56,7 @@ public class GameOfThronesActivity extends AppCompatActivity {
                     currentScore.getAndIncrement();
                 }
 
-                Intent intent = new Intent(GameOfThronesActivity.this, got1.class);
+                Intent intent = new Intent(got1.this, got2.class);
                 intent.putExtra("score", currentScore.get());
                 startActivity(intent);
             }

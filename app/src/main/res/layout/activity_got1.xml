@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/main"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/got"
-tools:context=".GameOfThronesActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/got"
+    tools:context=".got1">
 
     <TextView
         android:id="@+id/question"
@@ -15,7 +15,7 @@ tools:context=".GameOfThronesActivity">
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:padding="15dp"
-        android:text="1. Who was known as the “Kingslayer”?"
+        android:text="2. What is the name of Jon Snow’s direwolf?"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/rg"
@@ -36,7 +36,7 @@ tools:context=".GameOfThronesActivity">
             android:id="@+id/radioButtonA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ned Stark"
+            android:text="Shadow"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -44,7 +44,7 @@ tools:context=".GameOfThronesActivity">
             android:id="@+id/radioButtonB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jaime Lannister"
+            android:text="Frost"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -52,7 +52,7 @@ tools:context=".GameOfThronesActivity">
             android:id="@+id/radioButtonC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Robb Stark"
+            android:text="Ghost"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -65,15 +65,15 @@ tools:context=".GameOfThronesActivity">
             android:textSize="20sp" />
     </RadioGroup>
 
-<Button
-    android:id="@+id/button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:backgroundTint="#FFFFFF"
-    android:text="SUBMIT"
-    android:textColor="@color/black"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/rg" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="SUBMIT"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

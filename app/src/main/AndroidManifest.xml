@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PickSick">
         <activity
+            android:name=".gotresult"
+            android:exported="false" />
+        <activity
+            android:name=".got4"
+            android:exported="false" />
+        <activity
+            android:name=".got3"
+            android:exported="false" />
+        <activity
+            android:name=".got2"
+            android:exported="false" />
+        <activity
+            android:name=".got1"
+            android:exported="false" />
+        <activity
             android:name=".vresult"
             android:exported="false" />
         <activity
