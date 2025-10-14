@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dntwo"
-    tools:context=".DeathNoteActivity">
+    android:background="@drawable/naruto"
+    tools:context=".na4">
 
     <TextView
         android:id="@+id/question"
@@ -15,10 +15,9 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:padding="15dp"
-        android:text="1. Who is the main protagonist of Death Note?"
-        android:textColor="@color/black"
+        android:text="5. What is Kakashi Hatake’s signature jutsu?"
+        android:textColor="@color/white"
         android:textSize="22sp"
-        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/rg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +25,8 @@
 
     <RadioGroup
         android:id="@+id/rg"
-        android:layout_width="207dp"
-        android:layout_height="188dp"
-        android:background="@color/white"
+        android:layout_width="205dp"
+        android:layout_height="181dp"
         app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,32 +36,32 @@
             android:id="@+id/radioButtonA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EL"
-            android:textColor="@color/black"
+            android:text="Chidori"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButtonB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Light Yagami"
-            android:textColor="@color/black"
+            android:text="Rasengan"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButtonC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ryuk"
-            android:textColor="@color/black"
+            android:text="Shadow Clone Jutsu"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButtonD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Misa Amane"
-            android:textColor="@color/black"
+            android:text="Summoning Jutsu"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </RadioGroup>
 

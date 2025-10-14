@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class gotresult extends AppCompatActivity {
+public class n_result extends AppCompatActivity {
 
     private TextView tvScore;
     private Button btnFinish;
@@ -21,7 +21,7 @@ public class gotresult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_gotresult);
+        setContentView(R.layout.activity_nresult);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,15 +37,14 @@ public class gotresult extends AppCompatActivity {
 
 
         btnFinish.setOnClickListener(v -> {
-            Intent intent = new Intent(gotresult.this, MainActivity.class);
+            Intent intent = new Intent(n_result.this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
         });
     }
 
-     @Override
-
+    @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
                 .setTitle("Exit Quiz?")

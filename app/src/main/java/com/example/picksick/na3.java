@@ -15,19 +15,19 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class VikingsActivity extends AppCompatActivity {
+public class na3 extends AppCompatActivity {
 
     TextView question;
     RadioGroup rg;
     Button submit;
 
-    int correctAnswerId = R.id.radioButton1;
+    int correctAnswerId = R.id.radioButtonC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_vikings);
+        setContentView(R.layout.activity_na3);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -45,7 +45,7 @@ public class VikingsActivity extends AppCompatActivity {
             int selectedId = rg.getCheckedRadioButtonId();
 
             if (selectedId == -1) {
-                new AlertDialog.Builder(VikingsActivity.this)
+                new AlertDialog.Builder(na3.this)
                         .setTitle("Selection Required")
                         .setMessage("Please select an option")
                         .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
@@ -55,7 +55,7 @@ public class VikingsActivity extends AppCompatActivity {
                     currentScore.getAndIncrement();
                 }
 
-                Intent intent = new Intent(VikingsActivity.this, vQ2.class);
+                Intent intent = new Intent(na3.this, na4.class);
                 intent.putExtra("score", currentScore.get());
                 startActivity(intent);
             }

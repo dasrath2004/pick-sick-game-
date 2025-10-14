@@ -12,6 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PickSick">
         <activity
+            android:name=".n_result"
+            android:exported="false" />
+        <activity
+            android:name=".na4"
+            android:exported="false" />
+        <activity
+            android:name=".na3"
+            android:exported="false" />
+        <activity
+            android:name=".na2"
+            android:exported="false" />
+        <activity
+            android:name=".na1"
+            android:exported="false" />
+        <activity
+            android:name=".dn_result"
+            android:exported="false" />
+        <activity
+            android:name=".dn5"
+            android:exported="false" />
+        <activity
+            android:name=".dn4"
+            android:exported="false" />
+        <activity
+            android:name=".dn3"
+            android:exported="false" />
+        <activity
+            android:name=".dn2"
+            android:exported="false" />
+        <activity
             android:name=".gotresult"
             android:exported="false" />
         <activity

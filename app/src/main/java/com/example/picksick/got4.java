@@ -1,4 +1,3 @@
-
 package com.example.picksick;
 
 import android.annotation.SuppressLint;
@@ -64,4 +63,14 @@ public class got4 extends AppCompatActivity {
             }
         });
     }
+
+@Override
+public void onBackPressed() {
+    new AlertDialog.Builder(this)
+            .setTitle("Exit Quiz?")
+            .setMessage("Are you sure you want to exit this quiz?")
+            .setPositiveButton("Yes", (dialog, which) -> finish())
+            .setNegativeButton("No", null)
+            .show();
+  }
 }

@@ -1,5 +1,6 @@
 package com.example.picksick;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,19 +16,19 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class VikingsActivity extends AppCompatActivity {
+public class dn3 extends AppCompatActivity {
 
     TextView question;
     RadioGroup rg;
     Button submit;
+    int correctAnswerId = R.id.radioButtonB;
 
-    int correctAnswerId = R.id.radioButton1;
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_vikings);
+        setContentView(R.layout.activity_dn3);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -45,7 +46,7 @@ public class VikingsActivity extends AppCompatActivity {
             int selectedId = rg.getCheckedRadioButtonId();
 
             if (selectedId == -1) {
-                new AlertDialog.Builder(VikingsActivity.this)
+                new AlertDialog.Builder(dn3.this)
                         .setTitle("Selection Required")
                         .setMessage("Please select an option")
                         .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
@@ -55,12 +56,14 @@ public class VikingsActivity extends AppCompatActivity {
                     currentScore.getAndIncrement();
                 }
 
-                Intent intent = new Intent(VikingsActivity.this, vQ2.class);
+                Intent intent = new Intent(dn3.this, dn4.class);
                 intent.putExtra("score", currentScore.get());
                 startActivity(intent);
+                finish();
             }
         });
     }
+
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)

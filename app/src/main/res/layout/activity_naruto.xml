@@ -5,6 +5,75 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/naruto"
     tools:context=".NarutoActivity">
 
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="1. Who was Naruto Uzumaki’s first teacher at the Ninja Academy?"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/rg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="205dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question">
+
+        <RadioButton
+            android:id="@+id/radioButtonA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kakashi Hatake"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iruka Umino"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jiraiya"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mizuki"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="SUBMIT"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.picksick;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -45,6 +46,11 @@ public class vresult extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setTitle("Exit Quiz?")
+                .setMessage("Are you sure you want to exit this quiz?")
+                .setPositiveButton("Yes", (dialog, which) -> finish())
+                .setNegativeButton("No", null)
+                .show();
     }
 }

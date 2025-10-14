@@ -1,6 +1,5 @@
 package com.example.picksick;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -12,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class gotresult extends AppCompatActivity {
+public class dn_result extends AppCompatActivity {
 
     private TextView tvScore;
     private Button btnFinish;
@@ -21,7 +20,7 @@ public class gotresult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_gotresult);
+        setContentView(R.layout.activity_dn_result);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,21 +36,15 @@ public class gotresult extends AppCompatActivity {
 
 
         btnFinish.setOnClickListener(v -> {
-            Intent intent = new Intent(gotresult.this, MainActivity.class);
+            Intent intent = new Intent(dn_result.this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
         });
     }
 
-     @Override
-
+    @Override
     public void onBackPressed() {
-        new AlertDialog.Builder(this)
-                .setTitle("Exit Quiz?")
-                .setMessage("Are you sure you want to exit this quiz?")
-                .setPositiveButton("Yes", (dialog, which) -> finish())
-                .setNegativeButton("No", null)
-                .show();
+
     }
 }
